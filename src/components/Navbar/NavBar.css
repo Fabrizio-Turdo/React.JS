@@ -1,0 +1,17 @@
+.Navbar{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+.Ul{
+    list-style: none;
+    display: flex;
+}
+.Li{
+    padding-left: 40px;
+    
+}
+.Li a{
+    color: white;
+    text-decoration: none;    
+}
