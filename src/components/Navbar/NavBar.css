@@ -1,7 +1,12 @@
 .Navbar{
-    background-color: blue;
+    background-color: lightblue;
     display: flex;
     justify-content: space-between;
+}
+h1 a{
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
 }
 .Ul{
     list-style: none;
@@ -12,6 +17,6 @@
     
 }
 .Li a{
-    color: white;
+    color: #5B5B5B;
     text-decoration: none;    
 }
