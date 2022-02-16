@@ -1,0 +1,7 @@
+.card-img-top{
+    width: 240px;
+}
+.Elementos{
+    display: flex;
+    justify-content: center;
+}

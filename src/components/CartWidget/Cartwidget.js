@@ -2,16 +2,13 @@ import './CartWidget.css';
 const CartWidget = (props) =>{
     return(
         <>
-            <img  className="Cart" src={props.imagen} alt="Carrito"></img>
+            <button type="button" className="btn btn-primary">
+                <img  className="Cart" src={props.imagen} alt="Carrito" ></img>
+                <span className="badge badge-light">4</span>
+            </button>
         </>
 
     );
 }
-
-// const Cartwidget = () =>{
-//     return (
-//         <img alt="Carrito"></img>
-//     );
-// }
 export default CartWidget;
 
