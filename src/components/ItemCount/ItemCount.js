@@ -1,18 +1,21 @@
 import { useState } from "react"
 const ItemCount =(props) =>{
-    const [stock, setStock] = useState(0); //HOOKs para crear estados de mis componentes
+    const [conter, setConter] = useState(props.initial); //HOOKs para crear estados de mis componentes
     const increment = () =>{
-        setStock(stock+1);
-        console.log(stock);
+        setConter(conter+1);
+        console.log(conter);
+        //un ciclo para maximo 5
     }
     const decrease = () =>{
-        setStock(stock-1);
-        console.log(stock);
+        setConter(conter-1);
+        console.log(conter);
     }
     return(
         <>
+            <p>{conter}</p>
             <button onClick={increment}>Sumar al Carrito</button>
             <button onClick={decrease}>Eliminar del Carrito</button>
+            <button onClick={props.onAdd}>Agregar al carrito</button>
         </>
         )
 }
