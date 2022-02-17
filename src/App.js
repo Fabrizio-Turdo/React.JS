@@ -10,7 +10,7 @@ function App() {
         <Navbar />
 
       </div>
-      <ItemListContainer/>
+      <ItemListContainer greeting="Bienvenidos a mi Ecommerce"/>
 
     </>
   );
