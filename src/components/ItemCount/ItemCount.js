@@ -1,15 +1,25 @@
 import { useState } from "react"
 const ItemCount =(props) =>{
     const [conter, setConter] = useState(props.initial); //HOOKs para crear estados de mis componentes
-    const increment = () =>{
+
+        //ciclo para maximo 5
+    const increment =()=>{
         setConter(conter+1);
         console.log(conter);
-        //un ciclo para maximo 5
+        if(conter>4){
+            setConter(conter+0)
+            console.log('xD')
+        }
     }
     const decrease = () =>{
         setConter(conter-1);
         console.log(conter);
+        if (conter<2){
+            setConter(conter-0)
+            console.log('no sumar')
+        }
     }
+   
     return(
         <>
             <p>{conter}</p>
