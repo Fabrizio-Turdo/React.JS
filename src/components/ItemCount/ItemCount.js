@@ -22,6 +22,7 @@ const ItemCount =(props) =>{
    
     return(
         <>
+            <hr/>
             <p>{conter}</p>
             <button onClick={increment}>Sumar al Carrito</button>
             <button onClick={decrease}>Eliminar del Carrito</button>
