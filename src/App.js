@@ -11,7 +11,6 @@ function App() {
 
       </div>
       <ItemListContainer greeting="Bienvenidos a mi Ecommerce"/>
-
     </>
   );
 }
