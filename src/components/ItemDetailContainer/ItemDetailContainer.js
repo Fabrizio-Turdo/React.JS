@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import customFetch from "./customFetch";
-const {products} =require('../ItemListContainer/Item');
+import customFetch from "../Api/customFetch";
+const {products} =require('../Api/Data');
 
 const ItemDetailContainer = () => {
     const [Data, setData] = useState({});

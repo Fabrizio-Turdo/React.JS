@@ -1,19 +1,22 @@
-import './ItemList.css'
+import Item from './item'
+const ItemList = ({data}) => {
 
-const Items = (props) =>{
     return(
-        <>
-            <div className="card">
-                <img src={props.img} className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                  <h5 className="card-title">{props.title}</h5>
-                  <p className="card-text">{props.description}</p>
-                  <p className="card-text">{props.stock}</p>
-                  <a href="inico" className="btn btn-primary">{props.detalles}</a>
-                </div>
-            </div>
-        </>
-    )
-}
-export default Items;
+        <div>
+            {
+                data.map(item =>
+                    <Item 
+                    key={item.id}
+                    img={item.img} 
+                    title={item.title} 
+                    description={item.description} 
+                    detalles={item.detalles}
+                    stock={item.stock}/>
+                    
+                )
+            }
 
+        </div>
+    );
+}
+export default ItemList;
