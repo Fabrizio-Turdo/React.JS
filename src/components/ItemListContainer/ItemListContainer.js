@@ -8,9 +8,6 @@ import ItemList from './ItemList'
 
 
 const ItemListContainer =  (props) => {
-    // const onAdd = () =>{
-    //     console.log('Se agrego un producto.')
-    // }
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
@@ -26,7 +23,6 @@ const ItemListContainer =  (props) => {
             <h1>{props.greeting}</h1>
             <ItemList data={datos}/>
 
-            {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> Funcion onAdd. Agregar al carrito */}
 
 
         </>

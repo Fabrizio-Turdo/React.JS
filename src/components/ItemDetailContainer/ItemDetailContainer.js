@@ -1,25 +1,18 @@
 import {useEffect, useState} from "react";
 import customFetch from "../Api/customFetch";
-const {products} =require('../Api/Data');
-
+import Data from "../Api/Data";
+import ItemDetail from './ItemDetail';
 const ItemDetailContainer = () => {
-    const [Data, setData] = useState({});
+    const [dato, setDato] = useState({});
 
     useEffect(() => {
-        customFetch(2000, products[2])
-            .then(response => setData(response))
+        customFetch(2000, Data[2])
+            .then(response => setDato(response))
             .catch(error => console.log(error))
     }, []);
 
     return(
-        
-        <ul>
-           
-            {
-                Data.map(Item => <li key={Item.id}>{Item.description}</li>)
-            }
-            
-        </ul>
+        <ItemDetail item={dato}/>
         
     );
 }
