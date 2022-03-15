@@ -19,7 +19,6 @@ const ItemCount =(props) =>{
             console.log('no sumar')
         }
     }
-   
     return(
         <>
             <hr/>

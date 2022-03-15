@@ -1,19 +1,10 @@
-import {useEffect, useState} from "react";
-import customFetch from "../Api/customFetch";
-import Data from "../Api/Data";
-import ItemDetail from './ItemDetail';
-const ItemDetailContainer = () => {
-    const [dato, setDato] = useState({});
 
-    useEffect(() => {
-        customFetch(2000, Data[2])
-            .then(response => setDato(response))
-            .catch(error => console.log(error))
-    }, []);
+const ItemDetailContainer = () => {
 
     return(
-        <ItemDetail item={dato}/>
-        
+        <>
+        <h1>Detalle del item</h1>
+        </>
     );
 }
 export default ItemDetailContainer;

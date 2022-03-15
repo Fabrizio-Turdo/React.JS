@@ -7,7 +7,7 @@ import ItemList from './ItemList'
 
 
 
-const ItemListContainer =  (props) => {
+const ItemListContainer =  () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
@@ -16,15 +16,11 @@ const ItemListContainer =  (props) => {
             .catch(error => console.log(error))
     }, []);
 
-    console.log(datos);
+
 
     return(
         <> 
-            <h1>{props.greeting}</h1>
             <ItemList data={datos}/>
-
-
-
         </>
     );
 }

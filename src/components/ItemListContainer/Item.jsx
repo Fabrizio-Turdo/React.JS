@@ -1,4 +1,6 @@
 import './Item.css'
+import { Link } from 'react-router-dom';
+
 
 const Item = (props) =>{
     return(
@@ -9,7 +11,7 @@ const Item = (props) =>{
                   <h5 className="card-title">{props.title}</h5>
                   <p className="card-text">{props.description}</p>
                   <p className="card-text">{props.stock}</p>
-                  <a href="inico" className="btn btn-primary">{props.detalles}</a>
+                  <Link to="/item" className="btn btn-primary">{props.detalles}</Link>
                 </div>
             </div>
         </>
